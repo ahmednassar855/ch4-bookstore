@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Local
     "accounts.apps.AccountsConfig", # new
+    "pages.apps.PagesConfig", # new
 ]
 
 
@@ -68,6 +69,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+        "DIRS": [BASE_DIR / "templates"], # new
     },
 ]
 
