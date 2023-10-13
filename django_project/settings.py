@@ -40,21 +40,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "django.contrib.sites", # new
+    "django.contrib.sites",
 
     # Third-party
-    "crispy_forms", # new
-    "crispy_bootstrap5", # new
-    "allauth", # new
-    "allauth.account", # new
+    "crispy_forms",
+    "crispy_bootstrap5",
+    "allauth", 
+    "allauth.account", 
     # Local
-    "accounts.apps.AccountsConfig", # new
-    "pages.apps.PagesConfig", # new
+    "accounts.apps.AccountsConfig", 
+    "pages.apps.PagesConfig", 
+    "books.apps.BooksConfig", # new
 ]
 
 # django-crispy-forms
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
-CRISPY_TEMPLATE_PACK = "bootstrap5" # new
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
