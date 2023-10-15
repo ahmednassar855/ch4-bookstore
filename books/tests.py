@@ -35,7 +35,7 @@ class BookTest(TestCase):
     def test_book_list_view(self):
         response = self.client.get(reverse("book_list"))
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Harry Potter")  
+        self.assertContains(response, "Harry Potter")
         self.assertTemplateUsed(response, "books/book_list.html")
 
     def test_book_detail_view(self):
